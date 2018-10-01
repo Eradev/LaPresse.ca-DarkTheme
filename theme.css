@@ -817,3 +817,23 @@ body.affaires .ctnNavigation .menu ul li.affaires a:hover,
     background: #292C31;
     color: #DCDCDC;
 }
+
+.block-content {
+    background: transparent;
+}
+
+.toc_full ul.stories {
+    background: #292C31;
+}
+
+h4.general-cat {
+    background: #393C42;
+}
+
+.mise-en-valeur.single {
+    background: #393C42;
+}
+
+.mise-en-valeur.single .inner {
+    background: transparent;
+}
