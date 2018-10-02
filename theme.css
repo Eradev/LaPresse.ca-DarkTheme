@@ -849,3 +849,35 @@ section.manchette.bigbox article.une {
 section.manchette.bigbox .bigboxContainer article:not(.une) {
     background: #393C42;
 }
+
+#pinnedFactsList h2 {
+    background: #393C42;
+}
+
+#scribbleComments {
+    background: #393C42;
+}
+
+#submitBtn {
+    background: #292C31;
+}
+
+#recentPostsList {
+    background: #393C42;
+}
+
+ul.recentPostsWidget li {
+    background: #292C31;
+}
+
+ul.recentPostsWidget li .Content {
+    color: #DCDCDC;
+}
+
+.creatorName, .creatorName a {
+    color: #D73A49 !important;
+}
+
+.article-header {
+    background: #292C31;
+}
