@@ -837,3 +837,15 @@ h4.general-cat {
 .mise-en-valeur.single .inner {
     background: transparent;
 }
+
+section.manchette.bigbox .bigboxContainer {
+    background: #393C42;
+}
+
+section.manchette.bigbox article.une {
+    background: #393C42;
+}
+
+section.manchette.bigbox .bigboxContainer article:not(.une) {
+    background: #393C42;
+}
