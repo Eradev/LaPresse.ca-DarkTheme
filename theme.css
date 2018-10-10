@@ -401,6 +401,7 @@ a span {
 }
 
 ul.tab-list li.active {
+    background: #393C42;
     border-color: #4D4D4D;
 }
 
