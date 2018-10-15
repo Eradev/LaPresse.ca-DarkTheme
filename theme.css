@@ -305,7 +305,7 @@ section.manchette article.une p {
 #sousMenu,
 #masthead #maincontent,
 #contenant #bg {
-    background: #292C31;
+    background: #292C31 !important;
 }
 
 #entete .ctnNavigation .menu {
@@ -883,11 +883,6 @@ ul.recentPostsWidget li .Content {
     background: #292C31;
 }
 
-
-#wrapper #masthead #maincontent, #contenant #bg {
-    background-color: #393C42;
-}
-
 .articleStandard .articleShared {
     background: transparent;
 }
@@ -897,5 +892,13 @@ ul.recentPostsWidget li .Content {
 }
 
 .Avenuesousmenu h2 a {
+    color: #DCDCDC;
+}
+
+.stories .main h3 a, .stories .main h3 a:visited {
+    color: #3399FF;
+}
+
+ul.stories li.main p.amorce {
     color: #DCDCDC;
 }
