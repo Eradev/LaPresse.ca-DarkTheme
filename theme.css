@@ -882,3 +882,20 @@ ul.recentPostsWidget li .Content {
 .article-header {
     background: #292C31;
 }
+
+
+#wrapper #masthead #maincontent, #contenant #bg {
+    background-color: #393C42;
+}
+
+.articleStandard .articleShared {
+    background: transparent;
+}
+
+.Avenuesousmenu {
+    background-color: #292C31;
+}
+
+.Avenuesousmenu h2 a {
+    color: #DCDCDC;
+}
