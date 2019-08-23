@@ -1,6 +1,7 @@
 /* Colors
 	White:		#DCDCDC
 	Black:		#292C31
+    Dark Grey:  #333333
     Light Grey: #4D4D4D
 	Grey:		#393C42
 	Red:		#D73A49
@@ -8,379 +9,315 @@
     Orange:     #D77E00
 */
 
-body,
-body > .main {
+/* ### Global ### */
+body {
     background: #292C31;
     color: #DCDCDC;
 }
 
-h2,
+a,
+a:visited,
+a span {
+    color: #DCDCDC;
+}
+
+iframe {
+    background: #DCDCDC;
+}
+
 h3,
 h4 {
     color: #DCDCDC;
 }
 
-a,
-a:visited {
-    color: #3399FF;
+#entete .ctnEntete {
+    height: 97px;
 }
 
-.main {
-    padding-top: 30px;
+/* ### Landing page ### */
+body > .main {
+    background: #292C31;
 }
 
-.promotion {
-    display: none !important;
+.hotTopic > a h3,
+.manchette .nouvellesTrio .contenu > a,
+.moreNews p,
+section.manchette article.une p{
+    color: #DCDCDC;
 }
 
-.article300generic,
-.enVedette article,
-.relire article {
-    border-color: #393C42;
+.mise-en-valeur .manchette.complete.manchettevideo,
+section.manchette article.une {
+    background: #4D4D4D;
+}
+
+section.manchette article.une.regular.ACT h3 {
+    color: #292C31;
+}
+
+.tag {
+    color: #D73A49 !important;
+}
+
+.tags .tag {
+    color: #FFF !important;
+}
+
+.txtNoir h3,
+.manchette .txtNoir p {
+    color: #292C31 !important;
+}
+
+.nouvellesTrio .shader, .manchette .nouvellesTrio .degrade,
+.boxStandard ul,
+.boxStandard ul li,
+.nouvellesTrio article,
+.manchette .nouvellesTrio .degrade,
+.nouvellesTrio article:first-child .contenu,
+.nouvellesTrio article:last-child .contenu,
+.moreNews article {
+    border-color: #4D4D4D;
+}
+
+/* Xtra/Promo */
+.xtra {
+    display: none;
+}
+
+/* Right bar */
+.clindoeil blockquote {
+    background: #4D4D4D;
+}
+
+.clindoeil blockquote a {
+    color: #D4D4D4;
+}
+
+.clindoeil h2 a span {
+    color: #4D4D4D !important;
 }
 
 .article300generic h3,
 .enVedette article h3,
 .relire article h3 {
-    color: #DCDCDC;
+    color: #D4D4D4;
 }
 
-div[id^="dfp-bigbox"] {
-    margin-bottom: 0;
-}
-
-.header300link h2 > a,
-.blogue h2 > a,
-.videoPlayer h2 > a,
-.opinion h2 > a {
-    background: #393C42;
-    color: #DCDCDC;
-}
-
-.videoPlayer article .videoTitle h3 {
-    color: #DCDCDC;
-}
-
-.blogue article,
-.videoPlayer article,
-.opinion article {
-    border-color: #393C42;
-}
-
-.footer300link a {
-    background: #393C42;
-    color: #DCDCDC;
-}
-
-aside .boiteOnglets .tabs a {
-    background: #292C31
-}
-
-aside .boiteOnglets .tabs a:hover,
-aside .boiteOnglets .tabs a.active {
-    background: #393C42;
-    color: #DCDCDC;
-}
-
-aside .boiteOnglets .tabs a:nth-child(2) {
-    border-color: #393C42;
+.footer300link a:after {
+    color: #D73A49;
 }
 
 aside .boiteOnglets ol li,
 aside .boiteOnglets ul li {
-    background-color: #393C42;
-    border-color: #4D4D4D;
-}
-
-.colDroite .xtra .tabeffect,
-.colDroite .promotion .tabeffect {
-    background-color: #393C42;
-}
-
-.colDroite .xtra h2 a,
-.colDroite .promotion h2 a {
-    color: #DCDCDC;
-}
-
-.colDroite .xtra .questceDroite,
-.colDroite .promotion .questceDroite {
-    color: #DCDCDC;
-}
-
-.colDroite .xtra .xtraList,
-.colDroite .promotion .xtraList {
-    background: #292C31;
-}
-
-.colDroite .xtra article h3,
-.colDroite .promotion article h3 {
-    color: #DCDCDC;
-    padding-top: 0;
-}
-
-.colDroite .xtra article,
-.colDroite .promotion article {
-    border-color: #4D4D4D;
-}
-
-.clindoeil header {
-    background-color: #393C42;
-}
-
-.clindoeil .triangle {
-    border-left-color: #393C42;
-}
-
-.clindoeil header h2 a {
-    color: #DCDCDC;
-}
-
-.clindoeil a {
-    color: #DCDCDC;
-}
-
-.nousJoindre {
-    background-color: #292C31;
-}
-
-.nousJoindre h2 {
-    background-color: #393C42;
-    color: #DCDCDC;
-}
-
-.nousJoindreContenu h3 a {
-    color: #DCDCDC;
-}
-
-.txtNoir h3,
-.txtNoir p{
-    color: #292C31 !important;
-}
-
-.meteo {
-    color: #D77E00;
-}
-
-.hotTopic > a h3 {
-    color: #DCDCDC;
-}
-
-.tag {
-    color: #D73A49;
-}
-
-section.manchette article.une {
-    background: #393C42;
-    color: #DCDCDC;
-}
-
-section.manchette article.une p {
-    color: #DCDCDC;
-}
-
-.manchette .nouvellesTrio .tag {
-    color: #D73A49;
-}
-
-.manchette .nouvellesTrio .contenu a {
-    color: #DCDCDC;
-}
-
-.manchetteSuite .tag {
-    color: #D73A49;
-}
-
-.moreNews article {
-    border-color: #4D4D4D;
-}
-
-.moreNews p {
-    color: #DCDCDC;
-}
-
-.nouvellesTrio article {
-    border-color: #393C42;
-}
-
-.nouvellesTrio .shader,
-.manchette .nouvellesTrio .degrade {
-    border-color: #4D4D4D;
-}
-
-.nouvellesTrio article .contenu {
-    border-color: #4D4D4D !important;
-}
-
-.colGauche section.ACT header {
     background: #393C42;
 }
 
-.colGauche .tag {
+aside .boiteOnglets .tabs a {
+    background: #4D4D4D;
+}
+
+.blogue article, .opinion article, .videoPlayer article,
+.article300generic, .enVedette article, .relire article {
+    border-color: #4D4D4D;
+}
+
+/* ### Article page ### */
+/* Navigation */
+nav.main .logo {
+    top: auto;
+    bottom: 0;
+}
+
+nav.main .top {
+    background-color: transparent;
+    border: 0;
+}
+
+nav.main .top ul li a {
+    color: #DCDCDC;
+}
+
+nav.main ul.mainNav {
+    border: 0;
+}
+
+nav.main ul.mainNav a {
+    height: 36px;
+}
+
+/* Search bar */
+.boxRecherche {
+    background: transparent;
+}
+
+.gsc-search-box-tools .gsc-search-box .gsc-input {
+    padding-right: 0;
+}
+
+/* Article */
+div.main {
+    margin-top: 0;
+}
+
+div.main article h1.headlines .title,
+div.main article .visual .description,
+div.main article .lead,
+div.main article p.paragraph,
+div.main article h3,
+.quote .quoteText {
+    color: #DCDCDC;
+}
+
+div.main article .author {
+    background-color: #333333;
+}
+
+div.main article .author .name, 
+div.main article .author .organization {
+    color: #DCDCDC;
+}
+
+.quote {
+    border-color: #D73A49;
+}
+
+.quote .quoteSource {
     color: #D73A49;
 }
 
-.xtra .tabeffect,
-.promotion .tabeffect,
-.xtra .shader,
-.promotion .shader,
-.xtra .manchette .nouvellesTrio .degrade,
-.manchette .nouvellesTrio .xtra .degrade,
-.promotion .manchette .nouvellesTrio .degrade,
-.manchette .nouvellesTrio .promotion .degrade {
-    background-color: #393C42;
+.mostRecent article.card,
+div.main article .visual p:last-child {
+    border-color: #4C4C4C
 }
 
-.xtra, .promotion {
-    border-color: #393C42;
+.socialShare {
+    display: none;   
 }
 
-.xtra h2 a, 
-.promotion h2 a {
+/* Left bar */
+.mostRecent h1,
+.mostRecent article.card .title,
+.dates .updated{
     color: #DCDCDC;
 }
 
-.questce {
+.mostRecent article.card.ACT:hover .title, 
+.mostRecent article.card.ACT:hover .subTitle {
+    color: #D73A49;
+}
+
+/* Right bar */
+.col .trending {
+    margin-bottom: 5px;
+}
+
+.col .trending h1,
+.col .trending a.visual:before,
+.col .trending .title,
+.videosList h1,
+.videosList p {
     color: #DCDCDC;
 }
 
-.xtra > a,
-.promotion > a {
-    background: #292C31;
+.col .trending ol {
+    border: 0;
 }
 
-.xtra > a h3,
-.promotion > a h3 {
+.videosList li,
+.col .trending li.card {
+    border-color: #4C4C4C;
+}
+
+.col .videosList li.ACT:hover a p,
+.col .trending li.card.ACT:hover .title, 
+.col .trending li.card.ACT:hover .supTitle {
+    color: #D73A49;
+}
+
+/* Footer */
+footer {
+    background: #4D4D4D;
+}
+
+footer .block p {
+    color: #D73A49;
+}
+
+footer li a,
+footer .copyright,
+footer .legal a {
     color: #DCDCDC;
 }
 
-.xtra > a p,
-.promotion > a p {
-    color: #DCDCDC;
+/* ### Theme page ### */
+#entete .ctnEntete, 
+#navigation .menu, 
+#sousMenu, 
+#masthead #maincontent, 
+#contenant #bg,
+#masthead,
+#wrapper #ctn,
+.colspan {
+    background: transparent;
 }
 
-.xtra ul li a,
-.promotion ul li a {
-    color: #DCDCDC;
-}
-
+/* Header */
 #entete .boxChannels {
-    border-color: #292C31;
-    background: #292C31;
-}
-
-#entete .boxChannels ul li a {
-    color: #DCDCDC;
-}
-
-#entete .boxMeteo .temperature {
-    color: #D77E00;
+    border: 0;
+    padding-left: 5px;
+    background: transparent;
 }
 
 #entete .boxMeteo .meteoLinks .ville {
-    color: #D77E00;
+    color: #D73A49;
 }
 
+#entete .boxChannels ul li a,
+#entete .boxMeteo .temperature,
 #entete .boxMeteo .meteoLinks #switch-city-target {
-    color: #3399FF;
+    color: #DCDCDC;
 }
 
-.gsc-control-cse {
-    background: #292C31;
-    border-color: #292C31;
+.ctnNavigation .menu ul li a,
+.ctnNavigation .menu ul li a:hover {
+    height: 31px;
 }
 
-.gsc-search-button-v2,
-.gsc-search-button-v2:hover,
-.gsc-search-button-v2:focus {
-    background: #393C42;
-    border-color: #393C42;
-}
+/* Body */
 
-#masthead {
-    background: #292C31;
-}
-
-#entete .ctnEntete,
-#navigation .menu,
-#sousMenu,
-#masthead #maincontent,
-#contenant #bg {
-    background: #292C31 !important;
-}
-
-#entete .ctnNavigation .menu {
-    background: #292C31;
-}
-
-body.actualites #entete .ctnNavigation .menu ul li.actualites a {
-    border-color: #292C31;
-}
-
-.ctnNavigation .menu ul li.actualites a:hover,
-body.actualites .ctnNavigation .menu ul li.actualites a,
-body.actualites .ctnNavigation .menu ul li.actualites a:hover {
-    border-color: #292C31;
-}
-
-#wrapper .filariane ul li,
+#wrapper .filariane ul li a,
+#wrapper #fil ul li a,
+#wrapper .filariane h1,
+#wrapper #fil h1,
+#wrapper .filariane ul li, 
 #wrapper #fil ul li {
     color: #DCDCDC;
 }
 
 #wrapper .filariane ul li a,
 #wrapper #fil ul li a {
-    color: #3399FF;
+    font-weight: 600;
 }
 
-.actualites #wrapper .filariane h1,
-.actualites #wrapper #fil h1,
-.actualites .articleStandard.multimedia .article-page h2 {
-    color: #DCDCDC;
-}
-
-.colspan {
-    background: transparent;
+#dfp-leaderboard-1 {
+    display: none;
 }
 
 .manchette.complete {
-    background: #393C42;
+    background: #333333;
 }
 
-p.surtitre a,
-p.surtitre a:visited {
-    color: #D73A49;
-}
-
-.sub-news {
-    border-color: #4D4D4D;
-}
-
-.leftbar .main-box h2,
-.leftbar .main-box h2 a {
+.mise-en-valeur .rCol p.img-rights {
     color: #DCDCDC;
 }
 
-.vert-cat-box {
-    padding-bottom: 0;
-    margin-bottom: 10px;
+/* Left bar */
+.leftbar .main-box h2 span {
+    color: #D73A49;
 }
 
-.vert-cat-box .inner ul.square li {
-    border-color: #4D4D4D;
-}
-
-.centerbar .vert-cat-box {
-    background: transparent;
-    padding-top: 10px;
-}
-
-.centerbar h4.cat-block {
-    background: #393C42;
-    border-color: #4D4D4D;
-}
-
-h4.cat-block a,
-h4.cat-block a:visited {
+.leftbar .main-box h2, 
+.leftbar .main-box h2 a {
     color: #DCDCDC;
 }
 
@@ -388,72 +325,52 @@ h4.cat-block a:visited {
     border: 0;
 }
 
-.box-filet h4.cat,
-.box-filet .header,
+.box-filet h4.cat, 
+.box-filet .header, 
 .a-decouvrir .header {
-    background: #393C42;
+    background: #4D4D4D;
+}
+
+.centerbar h4.cat-block {
+    background: #4D4D4D;
     color: #DCDCDC;
-    border-color: #4D4D4D;
+    border-width: 1px;
 }
 
-a span {
-    color: #DCDCDC;
+.vert-cat-box {
+    background: #4D4D4D;
 }
 
-ul.tab-list li.active {
-    background: #393C42;
-    border-color: #4D4D4D;
-}
-
-ul.tab-list li.active a,
-ul.tab-list li.active a:visited {
-    background: #393C42;
+h4.cat-block a, 
+h4.cat-block a:visited {
     color: #DCDCDC;
 }
 
-ul.tab-list {
-    border-color: #4D4D4D;
+h4.cat-block span {
+    color: #D73A49;
 }
 
+/* Right bar */
 .b73 {
-    background: transparent;
+    background: #4D4D4D;
 }
 
-.b73 .videoThumbnailImage {
-    border-color: #4D4D4D;
-}
-
-.b73 .videoThumbnailWrapper {
-    border-color: #4D4D4D;
-}
-
-.b73 .videoThumbnailTitle a {
-    color: #DCDCDC;
-}
-
+.b73 .videoThumbnailTitle a,
 .b73 .videoThumbnailDate {
-    color: #4D4D4D;
-}
-
-.b73 .playerTitle {
-    background: #393C42;
-}
-
-.b73 h3 a,
-.b73 h3 a:active,
-.b73 h3 a:visited,
-.b73 h3 a:hover,
-.b73 .footer p a,
-.b73 .footer p a:active,
-.b73 .footer p a:visited,
-.b73 .footer p a:hover {
     color: #DCDCDC;
 }
 
-.custom-flux #tab-popular li {
-    border-color: #4D4D4D;
+.b73 .footer span,
+.b73 .footer:hover span {
+    color: #D73A49;
 }
 
+.staticBox {
+    background: #4D4D4D;
+    border: 0
+}
+
+/* Footer */
 #footer .liensTop {
     background: transparent;
 }
@@ -463,442 +380,169 @@ ul.tab-list {
     border-color: #DCDCDC;
 }
 
-#footer .boxLiens {
-    background: #393C42;
+#footer .boxLiens,
+#footer .boxCopyright {
+    background: #4D4D4D;
 }
 
-#footer .liens h3 {
-    color: #DCDCDC;
-}
-
+#footer .liens h3,
 #footer .liens li {
+    color: #D73A49;
+}
+
+#footer .liens li a,
+#footer .boxCopyright li a {
     color: #DCDCDC;
-}
-
-#footer .liens li a {
-    color: #3399FF;
-}
-
-#footer .internet ul.connecte li {
-    color: transparent;
-    border-radius: 50%;
-}
-
-#footer .internet ul.connecte li a:hover {
-    border-radius: 50%;
 }
 
 #footer .menu ul {
-    border-color: #292C31;
-}
-
-.ctnNavigation .menu ul li a:hover {
-    border-color: #292C31;
-}
-
-body.actualites #footer .ctnNavigation .menu ul li.actualites a,
-body.actualites #footer .ctnNavigation .menu ul li.actualites a:hover {
-    border-color: #292C31;
-}
-
-#footer .boxCopyright {
-    background: transparent;
-}
-
-#footer .boxCopyright li a {
-    color: #3399FF;
-}
-
-body.actualites .ctnNavigation .menu ul li.actualites a,
-body.international .ctnNavigation .menu ul li.international a,
-body.sports .ctnNavigation .menu ul li.sports a,
-body.arts .ctnNavigation .menu ul li.arts a,
-body.vivre .ctnNavigation .menu ul li.vivre a,
-body.vins .ctnNavigation .menu ul li.vins a,
-body.voyage .ctnNavigation .menu ul li.voyage a,
-body.noel .ctnNavigation .menu ul li.noel a,
-body.cinema .ctnNavigation .menu ul li.cinema a,
-body.maison .ctnNavigation .menu ul li.maison a,
-body.techno .ctnNavigation .menu ul li.techno a,
-body.affaires .ctnNavigation .menu ul li.affaires a,
-.menu ul.affaires li.affaires a,
-.menu ul.auto li.auto a,
-.menu ul.techno li.techno a,
-#masthead #header .ctnNavigation .menu ul li.cinema a,
-#global .ctnNavigation .menu ul li.cinema a {
-    border-color: #292C31;
-}
-
-.international #wrapper .filariane h1,
-.international #wrapper #fil h1,
-.international .articleStandard.multimedia .article-page h2 {
-    color: #DCDCDC;
-}
-
-.med-news-box h4.cat {
-    background: #393C42;
-    border-color: #4D4D4D;
-}
-
-h4.cat a {
-    color: #DCDCDC;
-}
-
-.med-news-box h5 a {
-    color: #3399FF;
-}
-
-a.next,
-a:visited.next {
-    background-color: #393C42;
-    border-color: #4D4D4D;
-}
-
-a.prec,
-a:visited.prec {
-    background-color: #393C42;
-    border-color: #4D4D4D;
-}
-
-a.next-off,
-a:visited.next-off {
-    color: #4D4D4D;
-    background-color: #292C31;
-    border-color: #4D4D4D;
-}
-
-a.prec-off,
-a:visited.prec-off {
-    color: #4D4D4D;
-    background-color: #292C31;
-    border-color: #4D4D4D;
-}
-
-.centerbar h4.cat-block {
-    color: #DCDCDC;
-}
-
-#wrapper #hotTopics {
-    background: transparent;
-}
-
-#wrapper #hotTopics .ctnHotTopics {
-    background: #393C42;
-    border-color: #4D4D4D;
-}
-
-#wrapper #hotTopics .ctnHotTopics ul li a {
-    color: #3399FF;
-}
-
-#wrapper #hotTopics .ctnHotTopics ul li img {
     border: 0;
 }
 
-.staticBox {
+/* ### Most popular ### */
+ul.pluspop li.active a {
+    color: #D73A49;
+}
+
+p.pubDate {
+    color: #DCDCDC;
+}
+
+/* ### Video ### */
+.b71 h3 {
+    color: #D73A49;
+}
+
+.b71 .videoThumbnailDate,
+.b71 .videoThumbnailTitle a {
+    color: #DCDCDC;
+}
+
+/* ### Debates ### */
+.boxChroniqueurs ul.listes li img {
+    border-color: #D73A49;
+}
+
+.boxChroniqueurs ul.listes li {
+    border-color: #4D4D4D;
+}
+
+.boxEdito ul li {
+    border: 0;
+}
+
+.boxEdito ul li p strong a {
+    color: #D73A49;
+}
+
+.colspan .boxEdito ul li p {
+    background: #4D4D4D;
+}
+
+#slideshow4horiz630 .listePhotos {
+    background: transparent;
+}
+
+#slideshow4horiz630 .listePhotos .listePhotosContent li div p a {
+    color: #DCDCDC;
+}
+
+/* ### Google search ### */
+.gsc-control-cse {
     border: 0;
     background: transparent;
 }
 
-.staticBox h4 {
-    background: #393C42;
+.gstl_50 {
+    color: #333;
+}
+
+.gsc-results-wrapper-overlay {
+    background: #292C31;
+}
+
+.gsc-result-info,
+.gsc-orderby-label,
+.gs-webResult .gs-snippet,
+.gs-imageResult .gs-snippet,
+.gs-fileFormatType,
+.gs-imageResult .gs-size {
     color: #DCDCDC;
 }
 
-#so_widgetTickerHeader {
-    background: #393C42;
+.gsc-webResult.gsc-result,
+.gsc-results .gsc-imageResult {
+    border: 0;
+    background: transparent;
+}
+
+.gsc-webResult.gsc-result:hover, .gsc-imageResult:hover {
+    border: 0;
+    background-color: #4D4D4D;
+}
+
+.gs-webResult.gs-result a.gs-title:link,
+.gs-webResult.gs-result a.gs-title:link b,
+.gs-imageResult a.gs-title:link,
+.gs-imageResult a.gs-title:link b,
+.gs-webResult.gs-result a.gs-title:visited,
+.gs-webResult.gs-result a.gs-title:visited b,
+.gs-imageResult a.gs-title:visited,
+.gs-imageResult a.gs-title:visited b {
+    color: #D73A49;
+}
+
+.gcsc-find-more-on-google-magnifier {
+    fill: #D73A49;
+}
+
+.gsc-modal-background-image {
+    background: #333333;
+}
+
+.gsc-results .gsc-cursor-box {
+    background: #4D4D4D;
+    padding: 1em;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+    background: transparent;
+    color: #D4D4D4;
+    border: 1px solid #D4D4D4;
+    padding: 5px;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+    color: #D73A49;
+    border: 1px solid #D73A49;
+}
+
+.gs-imageResult-popup .gs-image-popup-box {
+    background-color: #4D4D4D;
+    border-color: #333333;
+}
+
+/* ### Auto ### */
+h2,
+h2 a,
+h2 a:visited {
     color: #DCDCDC;
 }
 
-#wrapper .filariane h1,
-#wrapper #fil h1 {
-    color: #DCDCDC;
-}
-
-#wrapper #ctn {
-    background-color: #292C31;
-}
-
-h2 {
-    border-color: #4D4D4D;
-}
-
-h2 a, h2 a:visited {
-    color: #DCDCDC;
-}
-
-.boxMarques {
-    border-color: #4D4D4D;
-}
-
-.boxMarques .col {
-    border-color: #4D4D4D;
-}
-
-.boxMarques li a {
-    color: #DCDCDC;
-}
-
-.raquo {
-    border-color: #4D4D4D;
-}
-
-.raquo a {
-    background: #393C42;
-    color: #DCDCDC;
-}
-
-#frmVehicule {
-    background: #393C42;
-}
-
-#auto300po .nouvelles ul li .boxContent a {
-    color: #3399FF;
-}
-
-#auto300po .nouvelles ul li {
-    border-color: #4D4D4D;
-}
-
-.box300 .bottom,
-.box434 .bottom,
-.box634 .bottom {
-    border-color: #4D4D4D;
-}
-
-#auto300po .titres li span.titre {
-    border-color: #4D4D4D;
-}
-
-#auto300po .titres a.current span.titre {
-    color: #DCDCDC;
-    border-color: #4D4D4D;
-    background: #393C42;
-}
-
-.box434 ul li p strong a {
-    color: #3399FF;
-}
-
+.boxMarques li a,
 .box434 ul li a,
-.box634 ul li a {
-    color: #3399FF;
+.box634 ul li a,
+.box434 ul li p strong a,
+.box180 .box180wrapper a,
+#auto300po .nouvelles ul li .boxContent a,
+#auto300po .nouvelles ul li span.num {
+    color: #D4D4D4;
 }
 
-.box434 ul li,
-.box634 ul li {
-    border-color: #4D4D4D;
-}
-
-.box180 .box180wrapper {
-    border: 0;
-}
-
-.box180 .box180wrapper a {
-    color: #3399FF;
-}
-
-#sousManchette634 .innerContent,
-#sousManchette634 .content {
-    border-color: #4D4D4D;
-}
-
-.box180 .box180wrapper .box180title {
-    border-color: #4D4D4D;
-}
-
-body.cinema h2.titleBox,
-body.cinema #galeriePhotos434.main-box h2 {
-    background: #393C42;
-}
-
-body.cinema h2.titleBox a,
-body.cinema h2.titleBox a:hover,
-body.cinema h2.titleBox a:visited,
-body.cinema #galeriePhotos434.main-box h2 a,
-body.cinema #galeriePhotos434.main-box h2 a:hover,
-body.cinema #galeriePhotos434.main-box h2 a:visited {
-    color: #DCDCDC;
-}
-
-body.cinema h2.titleBox span,
-body.cinema #galeriePhotos434.main-box h2 span {
-    color: #DCDCDC;
-}
-
-.boxStandard ul li .video, .boxCritiques630 ul li .video {
-    background-color: #FFD455;
-}
-
-body.actualites .ctnNavigation .menu ul li.actualites a:hover,
-body.international .ctnNavigation .menu ul li.international a:hover,
-body.sports .ctnNavigation .menu ul li.sports a:hover,
-body.arts .ctnNavigation .menu ul li.arts a:hover,
-body.vivre .ctnNavigation .menu ul li.vivre a:hover,
-body.vins .ctnNavigation .menu ul li.vins a:hover,
-body.voyage .ctnNavigation .menu ul li.voyage a:hover,
-body.noel .ctnNavigation .menu ul li.noel a:hover,
-body.cinema .ctnNavigation .menu ul li.cinema a:hover,
-body.maison .ctnNavigation .menu ul li.maison a:hover,
-body.techno .ctnNavigation .menu ul li.techno a:hover,
-body.affaires .ctnNavigation .menu ul li.affaires a:hover,
-.menu ul.affaires li.affaires a:hover, .menu ul.auto li.auto a:hover,
-.menu ul.techno li.techno a:hover,
-#masthead #header .ctnNavigation .menu ul li.cinema a:hover {
-    border-color: #292C31;
-}
-
-#wrapper .boite_recherche table {
-    background: #393C42;
-}
-
-.articleStandard .article-header {
-    background: transparent;
-}
-
-.article-page .centerbar {
-    display: none;
-}
-
-.articleStandard .excerpt {
-    float: none;
-    width: 100%;
-}
-
-.articleStandard .image-block.principal .photodata {
-    border-color: #4D4D4D;
-}
-
-.articleStandard .photodata .desc,
-.articleStandard .photodata .auteur {
-    color: #DCDCDC;
-}
-
-#articlePage .boxAuteur,
-.article-critique .excerpt .boxAuteur,
-.articleStandard .excerpt .boxAuteur {
-    background: #393C42;
-    width: 100%;
-    margin-bottom: 0;
-}
-
-.articleStandard .colspan {
-    background: #393C42;
-}
-
-.articleStandard,
-.blogue-page {
-    padding-top: 0;
-}
-
-.article-page,
-.blogue-page {
-    padding-top: 0;
-}
-
-.boxStandard ul li {
-    border-color: #4D4D4D;
-}
-
-.articleStandard.multimedia .article-page h1 {
-    color: #DCDCDC;
-}
-
-.conteneurMediaIPad .titre.actualites {
-    background: #393C42;
-    color: #DCDCDC;
-}
-
-.conteneurMediaIPad .sidePanel .title {
-    background: #393C42;
-    color: #DCDCDC;
-}
-
-.conteneurMediaIPad .sidePanel {
-    background: #292C31;
-    color: #DCDCDC;
-}
-
-.block-content {
-    background: transparent;
-}
-
-.toc_full ul.stories {
-    background: #292C31;
-}
-
-h4.general-cat {
-    background: #393C42;
-}
-
-.mise-en-valeur.single {
-    background: #393C42;
-}
-
-.mise-en-valeur.single .inner {
-    background: transparent;
-}
-
-section.manchette.bigbox .bigboxContainer {
-    background: #393C42;
-}
-
-section.manchette.bigbox article.une {
-    background: #393C42;
-}
-
-section.manchette.bigbox .bigboxContainer article:not(.une) {
-    background: #393C42;
-}
-
-#pinnedFactsList h2 {
-    background: #393C42;
-}
-
-#scribbleComments {
-    background: #393C42;
-}
-
-#submitBtn {
-    background: #292C31;
-}
-
-#recentPostsList {
-    background: #393C42;
-}
-
-ul.recentPostsWidget li {
-    background: #292C31;
-}
-
-ul.recentPostsWidget li .Content {
-    color: #DCDCDC;
-}
-
-.creatorName, .creatorName a {
-    color: #D73A49 !important;
-}
-
-.article-header {
-    background: #292C31;
-}
-
-.articleStandard .articleShared {
-    background: transparent;
-}
-
-.Avenuesousmenu {
-    background-color: #292C31;
-}
-
-.Avenuesousmenu h2 a {
-    color: #DCDCDC;
-}
-
-.stories .main h3 a, .stories .main h3 a:visited {
-    color: #3399FF;
-}
-
-ul.stories li.main p.amorce {
-    color: #DCDCDC;
+.boxMarques .col,
+.boxMarques .first,
+.boxMarques,
+.box180 .box180wrapper,
+#sousManchette634 .innerContent, #sousManchette634 .content {
+    border-color: #4C4C4C;
 }
