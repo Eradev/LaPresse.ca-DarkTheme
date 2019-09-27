@@ -51,7 +51,9 @@ section.manchette article.une {
     background: #4D4D4D;
 }
 
-.tag {
+.nouvellesTrio .tag,
+.manchette .tag,
+.infoArticle .tag {
     color: #D73A49 !important;
 }
 
@@ -160,6 +162,7 @@ div.main article .visual .description,
 div.main article .lead,
 div.main article p.paragraph,
 div.main article h3,
+.mostRecent h2,
 .quote .quoteText {
     color: #DCDCDC;
 }
@@ -190,6 +193,23 @@ div.main article .visual p:last-child {
     display: none;   
 }
 
+#pinnedFactsList h2 {
+    background:#333333;
+    border: 0;
+}
+
+#recentPostsList {
+    background:#333333;
+}
+
+ul.recentPostsWidget li {
+    background:#4D4D4D;
+}
+
+ul.recentPostsWidget li .Content {
+    color: #D4D4D4;
+}
+
 /* Left bar */
 .mostRecent h1,
 .mostRecent article.card .title,
@@ -208,9 +228,11 @@ div.main article .visual p:last-child {
 }
 
 .col .trending h1,
+.col .trending h2,
 .col .trending a.visual:before,
 .col .trending .title,
 .videosList h1,
+.videosList h2,
 .videosList p {
     color: #DCDCDC;
 }
