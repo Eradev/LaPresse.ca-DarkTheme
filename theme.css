@@ -198,6 +198,7 @@ div.main article .visual p:last-child {
     border: 0;
 }
 
+.scribblelive #scribbleComments,
 #recentPostsList {
     background:#333333;
 }
