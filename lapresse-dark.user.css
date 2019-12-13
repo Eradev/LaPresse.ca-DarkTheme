@@ -1,87 +1,85 @@
 /* ==UserStyle==
 @name        LaPresse.ca Dark theme
+@description Dark theme for LaPresse.ca for those who don't like light
 @namespace   com.github.Eradev
-@version     1.0.0
+@version     1.0.1
 @updateURL   https://raw.githubusercontent.com/Eradev/Lapresse.ca-DarkTheme/master/lapresse-dark.user.css
 @author      Eradev
-@preprocessor uso
+@license     MIT
+@preprocessor less
+
+@var color colorWhite "White"      #DCDCDC
+@var color colorBlack "Black"      #292C31
+@var color colorRed   "Red"        #D73A49
+@var color colorDGrey "Dark Grey"  #333333
+@var color colorLGrey "Light Grey" #4D4D4D
+
 ==/UserStyle== */
 @-moz-document domain("lapresse.ca") {
-  /* Colors
-    White:      #DCDCDC
-    Black:      #292C31
-    Dark Grey:  #333333
-    Light Grey: #4D4D4D
-    Grey:	      #393C42
-    Red:        #D73A49
-    Yellow:     #FFD455
-    Orange:     #D77E00
-  */
-
   /* _init.sass */
   body,
   body > .main {
-      color: #DCDCDC;
-      background: #292C31;
+      color: @colorWhite;
+      background: @colorBlack;
   }
   h3,
   h4 {
-      color: #DCDCDC;
+      color: @colorWhite;
   }
 
   /* _dates.sass */
   .publicationsDate--type-update,
   .publicationsDate--type-publication {
-      color: #DCDCDC;
+      color: @colorWhite;
   }
 
   /* _header.sass */
   .meteo,
   .rightctrl a {
-      color: #DCDCDC;
+      color: @colorWhite;
   }
   .tooltip.recherche .recherche_google {
-      background: #333333;
+      background: @colorDGrey;
   }
   .gsc-control-cse {
       border: 0;
-      background: #333333;
+      background: @colorDGrey;
   }
   .gsc-search-button-v2, .gsc-search-button-v2:hover, .gsc-search-button-v2:focus {
-      background: #D73A49;
-      border-color: #4D4D4D;
+      background: @colorRed;
+      border-color: @colorLGrey;
   }
   .gsc-input-box,
   .gsc-completion-container {
       border: 0;
-      background: #4D4D4D;
+      background: @colorLGrey;
   }
   .tooltip.recherche .recherche_google input[type=text] {
-      background: #4D4D4D !important;
-      color: #DCDCDC;
+      background: @colorLGrey !important;
+      color: @colorWhite;
   }
   .gsc-completion-selected {
-      background: #333333;
+      background: @colorDGrey;
   }
 
   /* _navigation.sass */
   .mainNav__date {
-      color: #DCDCDC;
+      color: @colorWhite;
   }
   .mainNav__section {
-      border-bottom-color: #4D4D4D;
+      border-bottom-color: @colorLGrey;
   }
 
   /* _footer.sass */
   footer,
   .footer .footer__wrapper {
-      background: #333333;
+      background: @colorDGrey;
   }
   footer .block p {
-      color: #D73A49;
+      color: @colorRed;
   }
   footer li a {
-      color: #DCDCDC;
+      color: @colorWhite;
   }
   .sommaire section.legal {
       padding: 0;
@@ -91,7 +89,7 @@
   .headlinesBlockTitle,
   .headlineCard__title,
   .headlineCard__lead {
-      color: #DCDCDC;
+      color: @colorWhite;
   }
 
   /* accueil.sass */
@@ -103,16 +101,16 @@
   .moreNews p,
   section.manchette article.une p,
   .clindoeil a {
-      color: #DCDCDC;
+      color: @colorWhite;
   }
   .colGauche .tag,
   .tag,
   .manchette .nouvellesTrio .tag,
   .manchetteSuite .tag {
-      color: #D73A49;
+      color: @colorRed;
   }
   section.manchette article.une {
-      background: #4D4D4D;
+      background: @colorLGrey;
   }
   .moreNews article,
   .blogue article,
@@ -128,27 +126,27 @@
   .nouvellesTrio article:last-child .contenu,
   aside .boiteOnglets ol li,
   aside .boiteOnglets ul li {
-      border-color: #4D4D4D;
+      border-color: @colorLGrey;
   }
   .clindoeil header h2 a {
-      color: #292C31;
+      color: @colorBlack;
   }
   .clindoeil blockquote {
-      background: #333333;
+      background: @colorDGrey;
   }
   aside .boiteOnglets .tabs a {
-      color: #DCDCDC;
-      background: #4D4D4D;
-      border-color: #4D4D4D !important;
+      color: @colorWhite;
+      background: @colorLGrey;
+      border-color: @colorLGrey !important;
   }
   aside .boiteOnglets .tabs a:hover,
   aside .boiteOnglets .tabs a.active {
-      color: #DCDCDC;
-      background: #333333;
+      color: @colorWhite;
+      background: @colorDGrey;
   }
   aside .boiteOnglets ol li,
   aside .boiteOnglets ul li {
-      background: #292C31;
+      background: @colorBlack;
   }
 
   /* _article.sass */
@@ -159,50 +157,50 @@
   div.main article .lead,
   div.main article p.paragraph,
   div.main article .visual .description{
-      color: #DCDCDC;
+      color: @colorWhite;
   }
   div.main article .author {
-      background: #333333;
+      background: @colorDGrey;
   }
   div.main article h3,
   div.main article .author .name, div.main article .author .organization {
-      color: #DCDCDC;
+      color: @colorWhite;
   }
 
   /* _mostRecent.sass */
   .mostRecent>h2,
   .mostRecent article.card .title,
   .mostRecent article.card .articleDetail__lead {
-      color: #DCDCDC;
+      color: @colorWhite;
   }
   .mostRecentList article.mostRecentCard {
-      border-color: #4D4D4D;
+      border-color: @colorLGrey;
   }
 
   /* _trendingTabs.sass */
   .trendingTabs h2,
   .trendingTabs .title {
-      color: #DCDCDC;
+      color: @colorWhite;
   }
 
   /* _videoList.sass */
   .videosList h2,
   .videosList p {
-      color: #DCDCDC;
+      color: @colorWhite;
   }
   .videosList .videosListItem {
-      border-color: #4D4D4D;
+      border-color: @colorLGrey;
   }
 
   /* _trending.sass */
   .trending h2,
   .trending li.trendingCard a.trendingCard__visual:before,
   .trending .title {
-      color: #DCDCDC;
+      color: @colorWhite;
   }
   .trending li.trendingCard,
   .trendingTabs li.trendingCard {
-      border-color: #4D4D4D;
+      border-color: @colorLGrey;
   }
 
   /* _share.sass */
@@ -221,14 +219,14 @@
       padding: 0;
   }
   .autoPromoBox__title {
-      color: #DCDCDC;
+      color: @colorWhite;
   }
   .autoPromoBox__text {
-      background-color: #333333;
-      color: #DCDCDC;
+      background-color: @colorDGrey;
+      color: @colorWhite;
   }
   .autoPromoBox__text:hover {
-      background-color: #4D4D4D;
+      background-color: @colorLGrey;
   }
 
   /* xtraSmallBox.sass */
