@@ -1,0 +1,238 @@
+/* ==UserStyle==
+@name        LaPresse.ca Dark theme
+@version     1.0.0
+@updateURL   https://raw.githubusercontent.com/Eradev/Lapresse.ca-DarkTheme/master/lapresse-dark.user.css
+@author      Eradev
+@preprocessor uso
+==/UserStyle== */
+@-moz-document domain("lapresse.ca") {
+  /* Colors
+    White:      #DCDCDC
+    Black:      #292C31
+    Dark Grey:  #333333
+    Light Grey: #4D4D4D
+    Grey:	      #393C42
+    Red:        #D73A49
+    Yellow:     #FFD455
+    Orange:     #D77E00
+  */
+
+  /* _init.sass */
+  body,
+  body > .main {
+      color: #DCDCDC;
+      background: #292C31;
+  }
+  h3,
+  h4 {
+      color: #DCDCDC;
+  }
+
+  /* _dates.sass */
+  .publicationsDate--type-update,
+  .publicationsDate--type-publication {
+      color: #DCDCDC;
+  }
+
+  /* _header.sass */
+  .meteo,
+  .rightctrl a {
+      color: #DCDCDC;
+  }
+  .tooltip.recherche .recherche_google {
+      background: #333333;
+  }
+  .gsc-control-cse {
+      border: 0;
+      background: #333333;
+  }
+  .gsc-search-button-v2, .gsc-search-button-v2:hover, .gsc-search-button-v2:focus {
+      background: #D73A49;
+      border-color: #4D4D4D;
+  }
+  .gsc-input-box,
+  .gsc-completion-container {
+      border: 0;
+      background: #4D4D4D;
+  }
+  .tooltip.recherche .recherche_google input[type=text] {
+      background: #4D4D4D !important;
+      color: #DCDCDC;
+  }
+  .gsc-completion-selected {
+      background: #333333;
+  }
+
+  /* _navigation.sass */
+  .mainNav__date {
+      color: #DCDCDC;
+  }
+  .mainNav__section {
+      border-bottom-color: #4D4D4D;
+  }
+
+  /* _footer.sass */
+  footer,
+  .footer .footer__wrapper {
+      background: #333333;
+  }
+  footer .block p {
+      color: #D73A49;
+  }
+  footer li a {
+      color: #DCDCDC;
+  }
+  .sommaire section.legal {
+      padding: 0;
+  }
+
+  /* _headlines.sass */
+  .headlinesBlockTitle,
+  .headlineCard__title,
+  .headlineCard__lead {
+      color: #DCDCDC;
+  }
+
+  /* accueil.sass */
+  .hotTopic > a h3,
+  .article300generic h3,
+  .enVedette article h3,
+  .relire article h3,
+  .manchette .nouvellesTrio .contenu > a,
+  .moreNews p,
+  section.manchette article.une p,
+  .clindoeil a {
+      color: #DCDCDC;
+  }
+  .colGauche .tag,
+  .tag,
+  .manchette .nouvellesTrio .tag,
+  .manchetteSuite .tag {
+      color: #D73A49;
+  }
+  section.manchette article.une {
+      background: #4D4D4D;
+  }
+  .moreNews article,
+  .blogue article,
+  .opinion article,
+  .videoPlayer article,
+  .article300generic,
+  .enVedette article,
+  .relire article,
+  .nouvellesTrio article,
+  .nouvellesTrio .shader,
+  .manchette .nouvellesTrio .degrade,
+  .nouvellesTrio article:first-child .contenu,
+  .nouvellesTrio article:last-child .contenu,
+  aside .boiteOnglets ol li,
+  aside .boiteOnglets ul li {
+      border-color: #4D4D4D;
+  }
+  .clindoeil header h2 a {
+      color: #292C31;
+  }
+  .clindoeil blockquote {
+      background: #333333;
+  }
+  aside .boiteOnglets .tabs a {
+      color: #DCDCDC;
+      background: #4D4D4D;
+      border-color: #4D4D4D !important;
+  }
+  aside .boiteOnglets .tabs a:hover,
+  aside .boiteOnglets .tabs a.active {
+      color: #DCDCDC;
+      background: #333333;
+  }
+  aside .boiteOnglets ol li,
+  aside .boiteOnglets ul li {
+      background: #292C31;
+  }
+
+  /* _article.sass */
+  div.main article h1.headlines {
+      margin-top: 0;
+  }
+  div.main article h1.headlines .title,
+  div.main article .lead,
+  div.main article p.paragraph,
+  div.main article .visual .description{
+      color: #DCDCDC;
+  }
+  div.main article .author {
+      background: #333333;
+  }
+  div.main article h3,
+  div.main article .author .name, div.main article .author .organization {
+      color: #DCDCDC;
+  }
+
+  /* _mostRecent.sass */
+  .mostRecent>h2,
+  .mostRecent article.card .title,
+  .mostRecent article.card .articleDetail__lead {
+      color: #DCDCDC;
+  }
+  .mostRecentList article.mostRecentCard {
+      border-color: #4D4D4D;
+  }
+
+  /* _trendingTabs.sass */
+  .trendingTabs h2,
+  .trendingTabs .title {
+      color: #DCDCDC;
+  }
+
+  /* _videoList.sass */
+  .videosList h2,
+  .videosList p {
+      color: #DCDCDC;
+  }
+  .videosList .videosListItem {
+      border-color: #4D4D4D;
+  }
+
+  /* _trending.sass */
+  .trending h2,
+  .trending li.trendingCard a.trendingCard__visual:before,
+  .trending .title {
+      color: #DCDCDC;
+  }
+  .trending li.trendingCard,
+  .trendingTabs li.trendingCard {
+      border-color: #4D4D4D;
+  }
+
+  /* _share.sass */
+  .socialShare {
+      display: none;
+  }
+
+  /* _contributionBox.sass */
+  .contributionBox {
+      display: none;
+  }
+
+  /* _autoPromoBox.sass */
+  .autoPromoBox {
+      border: 0;
+      padding: 0;
+  }
+  .autoPromoBox__title {
+      color: #DCDCDC;
+  }
+  .autoPromoBox__text {
+      background-color: #333333;
+      color: #DCDCDC;
+  }
+  .autoPromoBox__text:hover {
+      background-color: #4D4D4D;
+  }
+
+  /* xtraSmallBox.sass */
+  .colDroite .xtra,
+  .colDroite .promotion {
+      display: none;
+  }
+}
