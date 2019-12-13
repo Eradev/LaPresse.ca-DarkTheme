@@ -9,570 +9,221 @@
     Orange:     #D77E00
 */
 
-/* ### Global ### */
-body {
+/* _init.sass */
+body,
+body > .main {
+    color: #DCDCDC;
     background: #292C31;
-    color: #DCDCDC;
 }
-
-a,
-a:visited,
-a span {
-    color: #DCDCDC;
-}
-
-iframe {
-    background: #DCDCDC;
-}
-
 h3,
 h4 {
     color: #DCDCDC;
 }
 
-#entete .ctnEntete {
-    height: 97px;
-}
-
-/* Adblocker warning removal */
-[class^="sp_veil"],
-[id^="sp_message_id"] {
-    display: none !important;
-}
-.sp-message-open {
-    margin-top: auto !important;
-    overflow: auto !important;
-    position: relative !important;
-}
-
-/* ### Landing page ### */
-body > .main {
-    background: #292C31;
-}
-
-.hotTopic > a h3,
-.manchette .nouvellesTrio .contenu > a,
-.moreNews p,
-section.manchette article.une p {
+/* _dates.sass */
+.publicationsDate--type-update,
+.publicationsDate--type-publication {
     color: #DCDCDC;
 }
 
-.mise-en-valeur .manchette.complete.manchettevideo,
+/* _header.sass */
+.meteo,
+.rightctrl a {
+    color: #DCDCDC;
+}
+.tooltip.recherche .recherche_google {
+    background: #333333;
+}
+.gsc-control-cse {
+    border: 0;
+    background: #333333;
+}
+.gsc-search-button-v2, .gsc-search-button-v2:hover, .gsc-search-button-v2:focus {
+    background: #D73A49;
+    border-color: #4D4D4D;
+}
+.gsc-input-box,
+.gsc-completion-container {
+    border: 0;
+    background: #4D4D4D;
+}
+.tooltip.recherche .recherche_google input[type=text] {
+    background: #4D4D4D !important;
+    color: #DCDCDC;
+}
+.gsc-completion-selected {
+    background: #333333;
+}
+
+/* _navigation.sass */
+.mainNav__date {
+    color: #DCDCDC;
+}
+.mainNav__section {
+    border-bottom-color: #4D4D4D;
+}
+
+/* _footer.sass */
+footer,
+.footer .footer__wrapper {
+    background: #333333;
+}
+footer .block p {
+    color: #D73A49;
+}
+footer li a {
+    color: #DCDCDC;
+}
+.sommaire section.legal {
+    padding: 0;
+}
+
+/* _headlines.sass */
+.headlinesBlockTitle,
+.headlineCard__title,
+.headlineCard__lead {
+    color: #DCDCDC;
+}
+
+/* accueil.sass */
+.hotTopic > a h3,
+.article300generic h3,
+.enVedette article h3,
+.relire article h3,
+.manchette .nouvellesTrio .contenu > a,
+.moreNews p,
+section.manchette article.une p,
+.clindoeil a {
+    color: #DCDCDC;
+}
+.colGauche .tag,
+.tag,
+.manchette .nouvellesTrio .tag,
+.manchetteSuite .tag {
+    color: #D73A49;
+}
 section.manchette article.une {
     background: #4D4D4D;
 }
-
-.nouvellesTrio .tag,
-.manchette .tag,
-.infoArticle .tag {
-    color: #D73A49 !important;
-}
-
-.tags .tag {
-    color: #FFF !important;
-}
-
-.txtNoir h3,
-.manchette .txtNoir p {
-    color: #292C31 !important;
-}
-
-.nouvellesTrio .shader, .manchette .nouvellesTrio .degrade,
-.boxStandard ul,
-.boxStandard ul li,
+.moreNews article,
+.blogue article,
+.opinion article,
+.videoPlayer article,
+.article300generic,
+.enVedette article,
+.relire article,
 .nouvellesTrio article,
+.nouvellesTrio .shader,
 .manchette .nouvellesTrio .degrade,
 .nouvellesTrio article:first-child .contenu,
 .nouvellesTrio article:last-child .contenu,
-.moreNews article {
-    border-color: #4D4D4D;
-}
-
-/* Xtra/Promo */
-.xtra {
-    display: none;
-}
-
-/* Right bar */
-.clindoeil blockquote {
-    background: #4D4D4D;
-}
-
-.clindoeil blockquote a {
-    color: #D4D4D4;
-}
-
-.clindoeil h2 a span {
-    color: #4D4D4D !important;
-}
-
-.article300generic h3,
-.enVedette article h3,
-.relire article h3 {
-    color: #D4D4D4;
-}
-
-.footer300link a:after {
-    color: #D73A49;
-}
-
 aside .boiteOnglets ol li,
 aside .boiteOnglets ul li {
-    background: #393C42;
+    border-color: #4D4D4D;
 }
-
+.clindoeil header h2 a {
+    color: #292C31;
+}
+.clindoeil blockquote {
+    background: #333333;
+}
 aside .boiteOnglets .tabs a {
+    color: #DCDCDC;
     background: #4D4D4D;
+    border-color: #4D4D4D !important;
+}
+aside .boiteOnglets .tabs a:hover,
+aside .boiteOnglets .tabs a.active {
+    color: #DCDCDC;
+    background: #333333;
+}
+aside .boiteOnglets ol li,
+aside .boiteOnglets ul li {
+    background: #292C31;
 }
 
-.blogue article, .opinion article, .videoPlayer article,
-.article300generic, .enVedette article, .relire article {
+/* _article.sass */
+div.main article h1.headlines {
+    margin-top: 0;
+}
+div.main article h1.headlines .title,
+div.main article .lead,
+div.main article p.paragraph,
+div.main article .visual .description{
+    color: #DCDCDC;
+}
+div.main article .author {
+    background: #333333;
+}
+div.main article h3,
+div.main article .author .name, div.main article .author .organization {
+    color: #DCDCDC;
+}
+
+/* _mostRecent.sass */
+.mostRecent>h2,
+.mostRecent article.card .title,
+.mostRecent article.card .articleDetail__lead {
+    color: #DCDCDC;
+}
+.mostRecentList article.mostRecentCard {
     border-color: #4D4D4D;
 }
 
-/* ### Article page ### */
-/* Navigation */
-nav.main .logo {
-    top: auto;
-    bottom: 0;
-}
-
-nav.main .top {
-    background-color: transparent;
-    border: 0;
-}
-
-nav.main .top ul li a {
+/* _trendingTabs.sass */
+.trendingTabs h2,
+.trendingTabs .title {
     color: #DCDCDC;
 }
 
-nav.main ul.mainNav {
-    border: 0;
-}
-
-nav.main ul.mainNav a {
-    height: 36px;
-}
-
-/* Search bar */
-.boxRecherche {
-    background: transparent;
-}
-
-.gsc-search-box-tools .gsc-search-box .gsc-input {
-    padding-right: 0;
-}
-
-/* Article */
-div.main {
-    margin-top: 0;
-}
-
-div.main article h1.headlines .title,
-div.main article .visual .description,
-div.main article .lead,
-div.main article p.paragraph,
-div.main article h3,
-.mostRecent h2,
-.quote .quoteText {
-    color: #DCDCDC;
-}
-
-div.main article .author {
-    background-color: #333333;
-}
-
-div.main article .author .name, 
-div.main article .author .organization {
-    color: #DCDCDC;
-}
-
-.quote {
-    border-color: #D73A49;
-}
-
-.quote .quoteSource {
-    color: #D73A49;
-}
-
-.mostRecent article.card,
-div.main article .visual p:last-child {
-    border-color: #4C4C4C
-}
-
-.socialShare {
-    display: none;   
-}
-
-#pinnedFactsList h2 {
-    background:#333333;
-    border: 0;
-}
-
-.scribblelive #scribbleComments,
-#recentPostsList {
-    background:#333333;
-}
-
-ul.recentPostsWidget li {
-    background:#4D4D4D;
-}
-
-ul.recentPostsWidget li .Content {
-    color: #D4D4D4;
-}
-
-/* Left bar */
-.mostRecent h1,
-.mostRecent article.card .title,
-.dates .updated{
-    color: #DCDCDC;
-}
-
-.mostRecent article.card.ACT:hover .title, 
-.mostRecent article.card.ACT:hover .subTitle {
-    color: #D73A49;
-}
-
-/* Right bar */
-.col .trending {
-    margin-bottom: 5px;
-}
-
-.col .trending h1,
-.col .trending h2,
-.col .trending a.visual:before,
-.col .trending .title,
-.videosList h1,
+/* _videoList.sass */
 .videosList h2,
 .videosList p {
     color: #DCDCDC;
 }
-
-.col .trending ol {
-    border: 0;
-}
-
-.videosList li,
-.col .trending li.card {
-    border-color: #4C4C4C;
-}
-
-.col .videosList li.ACT:hover a p,
-.col .trending li.card.ACT:hover .title, 
-.col .trending li.card.ACT:hover .supTitle {
-    color: #D73A49;
-}
-
-/* Footer */
-footer {
-    background: #4D4D4D;
-}
-
-footer .block p {
-    color: #D73A49;
-}
-
-footer li a,
-footer .copyright,
-footer .legal a {
-    color: #DCDCDC;
-}
-
-/* ### Theme page ### */
-#entete .ctnEntete, 
-#navigation .menu, 
-#sousMenu, 
-#masthead #maincontent, 
-#contenant #bg,
-#masthead,
-#wrapper #ctn,
-.colspan {
-    background: transparent;
-}
-
-/* Header */
-#entete .boxChannels {
-    border: 0;
-    padding-left: 5px;
-    background: transparent;
-}
-
-#entete .boxMeteo .meteoLinks .ville {
-    color: #D73A49;
-}
-
-#entete .boxChannels ul li a,
-#entete .boxMeteo .temperature,
-#entete .boxMeteo .meteoLinks #switch-city-target {
-    color: #DCDCDC;
-}
-
-.ctnNavigation .menu ul li a,
-.ctnNavigation .menu ul li a:hover {
-    height: 31px;
-}
-
-/* Body */
-
-#wrapper .filariane ul li a,
-#wrapper #fil ul li a,
-#wrapper .filariane h1,
-#wrapper #fil h1,
-#wrapper .filariane ul li, 
-#wrapper #fil ul li {
-    color: #DCDCDC;
-}
-
-#wrapper .filariane ul li a,
-#wrapper #fil ul li a {
-    font-weight: 600;
-}
-
-#dfp-leaderboard-1 {
-    display: none;
-}
-
-.manchette.complete {
-    background: #333333;
-}
-
-.mise-en-valeur .rCol p.img-rights {
-    color: #DCDCDC;
-}
-
-/* Left bar */
-.leftbar .main-box h2 span {
-    color: #D73A49;
-}
-
-.leftbar .main-box h2, 
-.leftbar .main-box h2 a {
-    color: #DCDCDC;
-}
-
-.box-filet {
-    border: 0;
-}
-
-.box-filet h4.cat, 
-.box-filet .header, 
-.a-decouvrir .header {
-    background: #4D4D4D;
-}
-
-.centerbar h4.cat-block {
-    background: #4D4D4D;
-    color: #DCDCDC;
-    border-width: 1px;
-}
-
-.vert-cat-box {
-    background: #4D4D4D;
-}
-
-h4.cat-block a, 
-h4.cat-block a:visited {
-    color: #DCDCDC;
-}
-
-h4.cat-block span {
-    color: #D73A49;
-}
-
-/* Right bar */
-.b73 {
-    background: #4D4D4D;
-}
-
-.b73 .videoThumbnailTitle a,
-.b73 .videoThumbnailDate {
-    color: #DCDCDC;
-}
-
-.b73 .footer span,
-.b73 .footer:hover span {
-    color: #D73A49;
-}
-
-.staticBox {
-    background: #4D4D4D;
-    border: 0
-}
-
-/* Footer */
-#footer .liensTop {
-    background: transparent;
-}
-
-#footer .liensTop ul li a {
-    color: #DCDCDC;
-    border-color: #DCDCDC;
-}
-
-#footer .boxLiens,
-#footer .boxCopyright {
-    background: #4D4D4D;
-}
-
-#footer .liens h3,
-#footer .liens li {
-    color: #D73A49;
-}
-
-#footer .liens li a,
-#footer .boxCopyright li a {
-    color: #DCDCDC;
-}
-
-#footer .menu ul {
-    border: 0;
-}
-
-/* ### Most popular ### */
-ul.pluspop li.active a {
-    color: #D73A49;
-}
-
-p.pubDate {
-    color: #DCDCDC;
-}
-
-/* ### Video ### */
-.b71 h3 {
-    color: #D73A49;
-}
-
-.b71 .videoThumbnailDate,
-.b71 .videoThumbnailTitle a {
-    color: #DCDCDC;
-}
-
-/* ### Debates ### */
-.boxChroniqueurs ul.listes li img {
-    border-color: #D73A49;
-}
-
-.boxChroniqueurs ul.listes li {
+.videosList .videosListItem {
     border-color: #4D4D4D;
 }
 
-.boxEdito ul li {
-    border: 0;
-}
-
-.boxEdito ul li p strong a {
-    color: #D73A49;
-}
-
-.colspan .boxEdito ul li p {
-    background: #4D4D4D;
-}
-
-#slideshow4horiz630 .listePhotos {
-    background: transparent;
-}
-
-#slideshow4horiz630 .listePhotos .listePhotosContent li div p a {
+/* _trending.sass */
+.trending h2,
+.trending li.trendingCard a.trendingCard__visual:before,
+.trending .title {
     color: #DCDCDC;
 }
+.trending li.trendingCard,
+.trendingTabs li.trendingCard {
+    border-color: #4D4D4D;
+}
 
-/* ### Google search ### */
-.gsc-control-cse {
+/* _share.sass */
+.socialShare {
+    display: none;
+}
+
+/* _contributionBox.sass */
+.contributionBox {
+    display: none;
+}
+
+/* _autoPromoBox.sass */
+.autoPromoBox {
     border: 0;
-    background: transparent;
+    padding: 0;
 }
-
-.gstl_50 {
-    color: #333;
-}
-
-.gsc-results-wrapper-overlay {
-    background: #292C31;
-}
-
-.gsc-result-info,
-.gsc-orderby-label,
-.gs-webResult .gs-snippet,
-.gs-imageResult .gs-snippet,
-.gs-fileFormatType,
-.gs-imageResult .gs-size {
+.autoPromoBox__title {
     color: #DCDCDC;
 }
-
-.gsc-webResult.gsc-result,
-.gsc-results .gsc-imageResult {
-    border: 0;
-    background: transparent;
+.autoPromoBox__text {
+    background-color: #333333;
+    color: #DCDCDC;
 }
-
-.gsc-webResult.gsc-result:hover, .gsc-imageResult:hover {
-    border: 0;
+.autoPromoBox__text:hover {
     background-color: #4D4D4D;
 }
 
-.gs-webResult.gs-result a.gs-title:link,
-.gs-webResult.gs-result a.gs-title:link b,
-.gs-imageResult a.gs-title:link,
-.gs-imageResult a.gs-title:link b,
-.gs-webResult.gs-result a.gs-title:visited,
-.gs-webResult.gs-result a.gs-title:visited b,
-.gs-imageResult a.gs-title:visited,
-.gs-imageResult a.gs-title:visited b {
-    color: #D73A49;
-}
-
-.gcsc-find-more-on-google-magnifier {
-    fill: #D73A49;
-}
-
-.gsc-modal-background-image {
-    background: #333333;
-}
-
-.gsc-results .gsc-cursor-box {
-    background: #4D4D4D;
-    padding: 1em;
-}
-
-.gsc-results .gsc-cursor-box .gsc-cursor-page {
-    background: transparent;
-    color: #D4D4D4;
-    border: 1px solid #D4D4D4;
-    padding: 5px;
-}
-
-.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
-    color: #D73A49;
-    border: 1px solid #D73A49;
-}
-
-.gs-imageResult-popup .gs-image-popup-box {
-    background-color: #4D4D4D;
-    border-color: #333333;
-}
-
-/* ### Auto ### */
-h2,
-h2 a,
-h2 a:visited {
-    color: #DCDCDC;
-}
-
-.boxMarques li a,
-.box434 ul li a,
-.box634 ul li a,
-.box434 ul li p strong a,
-.box180 .box180wrapper a,
-#auto300po .nouvelles ul li .boxContent a,
-#auto300po .nouvelles ul li span.num {
-    color: #D4D4D4;
-}
-
-.boxMarques .col,
-.boxMarques .first,
-.boxMarques,
-.box180 .box180wrapper,
-#sousManchette634 .innerContent, #sousManchette634 .content {
-    border-color: #4C4C4C;
+/* xtraSmallBox.sass */
+.colDroite .xtra,
+.colDroite .promotion {
+    display: none;
 }
