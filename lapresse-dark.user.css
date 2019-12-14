@@ -91,6 +91,11 @@
   .headlineCard__lead {
       color: @colorWhite;
   }
+  
+  /* _quote.sass */
+  .quote .quoteText {
+      color: @colorRed;
+  }
 
   /* accueil.sass */
   .hotTopic > a h3,
