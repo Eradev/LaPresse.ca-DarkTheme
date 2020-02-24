@@ -2,7 +2,7 @@
 @name        LaPresse.ca Dark theme
 @description Dark theme for LaPresse.ca for those who don't like light
 @namespace   com.github.Eradev
-@version     1.1.3
+@version     1.1.4
 @updateURL   https://raw.githubusercontent.com/Eradev/Lapresse.ca-DarkTheme/master/lapresse-dark.user.css
 @author      Eradev
 @license     MIT
@@ -71,14 +71,14 @@
   }
 
   /* _footer.sass */
-  footer,
-  .footer .footer__wrapper {
+  .footer {
       background: @colorDGrey;
   }
-  footer .block p {
+  .footer .footer__block p, 
+  .footer .footer__block.applications p {
       color: @colorRed;
   }
-  footer li a {
+  .footer a {
       color: @colorWhite;
   }
   .sommaire section.legal {
@@ -245,6 +245,11 @@
   /* xtraSmallBox.sass */
   .colDroite .xtra,
   .colDroite .promotion {
+      display: none;
+  }
+  
+  /* _pub.sass */
+  .xtra {
       display: none;
   }
 }
