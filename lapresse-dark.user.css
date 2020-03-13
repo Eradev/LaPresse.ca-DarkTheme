@@ -2,7 +2,7 @@
 @name        LaPresse.ca Dark theme
 @description Dark theme for LaPresse.ca for those who don't like light
 @namespace   com.github.Eradev
-@version     1.2.0
+@version     1.2.1
 @updateURL   https://raw.githubusercontent.com/Eradev/Lapresse.ca-DarkTheme/master/lapresse-dark.user.css
 @author      Eradev
 @license     MIT
@@ -19,85 +19,93 @@
   /* _init.sass */
   body,
   body > .main {
-      color: @colorWhite;
-      background: @colorBlack;
+    color: @colorWhite;
+    background: @colorBlack;
   }
   h3,
   h4 {
-      color: @colorWhite;
+    color: @colorWhite;
   }
 
   /* _dates.sass */
   .publicationsDate--type-update,
   .publicationsDate--type-publication {
-      color: @colorWhite;
+    color: @colorWhite;
   }
 
   /* _header.sass */
   .meteo,
   .rightctrl a {
-      color: @colorWhite;
+    color: @colorWhite;
   }
   .tooltip.recherche .recherche_google {
-      background: @colorDGrey;
+    background: @colorDGrey;
   }
   .gsc-control-cse {
-      border: 0;
-      background: @colorDGrey;
+    border: 0;
+    background: @colorDGrey;
   }
-  .gsc-search-button-v2, .gsc-search-button-v2:hover, .gsc-search-button-v2:focus {
-      background: @colorRed;
-      border-color: @colorLGrey;
+  .gsc-search-button-v2,
+  .gsc-search-button-v2:hover,
+  .gsc-search-button-v2:focus {
+    background: @colorRed;
+    border-color: @colorLGrey;
   }
   .gsc-input-box,
   .gsc-completion-container {
-      border: 0;
-      background: @colorLGrey;
+    border: 0;
+    background: @colorLGrey;
   }
-  .tooltip.recherche .recherche_google input[type=text] {
-      background: @colorLGrey !important;
-      color: @colorWhite;
+  .tooltip.recherche .recherche_google input[type="text"] {
+    background: @colorLGrey !important;
+    color: @colorWhite;
   }
   .gsc-completion-selected {
-      background: @colorDGrey;
+    background: @colorDGrey;
   }
 
   /* _navigation.sass */
   .mainNav__date {
-      color: @colorWhite;
+    color: @colorWhite;
   }
   .mainNav__section {
-      border-bottom-color: @colorLGrey;
+    border-bottom-color: @colorLGrey;
   }
 
   /* _footer.sass */
   .footer {
-      background: @colorDGrey;
+    background: @colorDGrey;
   }
-  .footer .footer__block p, 
+  .footer .footer__block p,
   .footer .footer__block.applications p {
-      color: @colorRed;
+    color: @colorRed;
   }
   .footer a {
-      color: @colorWhite;
+    color: @colorWhite;
   }
   .sommaire section.legal {
-      padding: 0;
+    padding: 0;
   }
 
   /* _headlines.sass */
   .headlinesBlockTitle,
   .headlineCard__title,
   .headlineCard__lead {
-      color: @colorWhite;
+    color: @colorWhite;
   }
-  
+
   /* _quote.sass */
   .quote .quoteText {
-      color: @colorRed;
+    color: @colorRed;
   }
   .quote .quoteSource {
-      color: @colorWhite;
+    color: @colorWhite;
+  }
+
+  /* _tag.sass */
+  .tag {
+    background-color: @colorDGrey;
+    border: 1px solid @colorRed;
   }
 
   /* accueil.sass */
@@ -109,16 +117,21 @@
   .moreNews p,
   section.manchette article.une p,
   .clindoeil a {
-      color: @colorWhite;
+    color: @colorWhite;
   }
   .colGauche .tag,
   .tag,
-  .manchette .nouvellesTrio .tag,
   .manchetteSuite .tag {
-      color: @colorRed;
+    color: @colorRed;
+  }
+  .moreNews .tag,
+  .manchette .nouvellesTrio .tag {
+    color: @colorRed;
+    background: transparent;
+    border: 0;
   }
   section.manchette article.une {
-      background: @colorLGrey;
+    background: @colorLGrey;
   }
   .moreNews article,
   .blogue article,
@@ -134,151 +147,156 @@
   .nouvellesTrio article:last-child .contenu,
   aside .boiteOnglets ol li,
   aside .boiteOnglets ul li {
-      border-color: @colorLGrey;
+    border-color: @colorLGrey;
   }
   .clindoeil header h2 a {
-      color: @colorBlack;
+    color: @colorBlack;
   }
   .clindoeil blockquote {
-      background: @colorDGrey;
+    background: @colorDGrey;
   }
   aside .boiteOnglets .tabs a {
-      color: @colorWhite;
-      background: @colorLGrey;
-      border-color: @colorLGrey !important;
+    color: @colorWhite;
+    background: @colorLGrey;
+    border-color: @colorLGrey !important;
   }
   aside .boiteOnglets .tabs a:hover,
   aside .boiteOnglets .tabs a.active {
-      color: @colorWhite;
-      background: @colorDGrey;
+    color: @colorWhite;
+    background: @colorDGrey;
   }
   aside .boiteOnglets ol li,
   aside .boiteOnglets ul li {
-      background: @colorBlack;
+    background: @colorBlack;
+  }
+  .colGauche section .nouvellesTrio .contenu .tag {
+    background: transparent;
+    border: 0;
   }
 
   /* _article.sass */
   div.main article h1.headlines {
-      margin-top: 0;
+    margin-top: 0;
   }
   div.main article p.epigraph,
   div.main article h1.headlines .title,
   div.main article .lead,
   div.main article p.paragraph,
-  div.main article .visual .description{
-      color: @colorWhite;
+  div.main article .visual .description {
+    color: @colorWhite;
   }
   div.main article #recentPostsList,
   div.main article .author {
-      background: @colorDGrey;
+    background: @colorDGrey;
   }
   div.main article h2,
   div.main article h3,
-  div.main article .author .name, 
+  div.main article .author .name,
   div.main article .author .organization {
-      color: @colorWhite;
+    color: @colorWhite;
   }
   article.txtNoir h3,
   article.txtNoir p {
-      color: @colorBlack !important;
-  };
+    color: @colorBlack !important;
+  }
 
   /* _mostRecent.sass */
-  .mostRecent>h2,
+  .mostRecent > h2,
   .mostRecent article.card .title,
   .mostRecent article.card .articleDetail__lead {
-      color: @colorWhite;
+    color: @colorWhite;
   }
   .mostRecentList article.mostRecentCard {
-      border-color: @colorLGrey;
+    border-color: @colorLGrey;
   }
 
   /* _trendingTabs.sass */
   .trendingTabs h2,
   .trendingTabs .title {
-      color: @colorWhite;
+    color: @colorWhite;
   }
 
   /* _videoList.sass */
   .videosList h2,
   .videosList p {
-      color: @colorWhite;
+    color: @colorWhite;
   }
   .videosList .videosListItem {
-      border-color: @colorLGrey;
+    border-color: @colorLGrey;
   }
 
   /* _trending.sass */
   .trending h2,
   .trending li.trendingCard a.trendingCard__visual:before,
   .trending .title {
-      color: @colorWhite;
+    color: @colorWhite;
   }
   .trending li.trendingCard,
   .trendingTabs li.trendingCard {
-      border-color: @colorLGrey;
+    border-color: @colorLGrey;
   }
 
   /* _share.sass */
   .socialShare {
-      display: none;
+    display: none;
   }
 
   /* _contributionBox.sass */
   .contributionBox {
-      display: none;
+    display: none;
   }
 
   /* _autoPromoBox.sass */
   .autoPromoBox {
-      border: 0;
-      padding: 0;
+    border: 0;
+    padding: 0;
   }
   .autoPromoBox__title {
-      color: @colorWhite;
+    color: @colorWhite;
   }
   .autoPromoBox__text {
-      background-color: @colorDGrey;
-      color: @colorWhite;
+    background-color: @colorDGrey;
+    color: @colorWhite;
   }
   .autoPromoBox__text:hover {
-      background-color: @colorLGrey;
+    background-color: @colorLGrey;
   }
 
   /* xtraSmallBox.sass */
   .colDroite .xtra,
   .colDroite .promotion {
-      display: none;
+    display: none;
   }
-  
+
   /* _pub.sass */
   .xtra {
-      display: none;
+    display: none;
   }
-  
+
   /* scribblelive.sass */
   #pinnedFactsList h2 {
-      background: @colorLGrey;
-      border-color: @colorDGrey;
-      color: @colorWhite;
+    background: @colorLGrey;
+    border-color: @colorDGrey;
+    color: @colorWhite;
   }
- 
+
   #recentPostsList,
   .scribblelive #scribbleComments {
-      background: @colorDGrey;
+    background: @colorDGrey;
   }
-  
+
   ul.recentPostsWidget li {
     background: @colorLGrey;
   }
-  
+
   ul.recentPostsWidget li .Content {
     color: @colorWhite;
   }
-  
-  /* _tag.sass */
-  .tag {
-      background-color: @colorDGrey;
-      border: 1px solid @colorRed;
+
+  /* _manchettes.sass */
+  section.manchette article.une.magasine .tag {
+    border: 0;
+    background: transparent;
+    padding: 0;
   }
 }
