@@ -2,7 +2,7 @@
 @name        LaPresse.ca Dark theme
 @description Dark theme for LaPresse.ca for those who don't like light
 @namespace   com.github.Eradev
-@version     1.1.4
+@version     1.2.0
 @updateURL   https://raw.githubusercontent.com/Eradev/Lapresse.ca-DarkTheme/master/lapresse-dark.user.css
 @author      Eradev
 @license     MIT
@@ -168,11 +168,14 @@
   div.main article .visual .description{
       color: @colorWhite;
   }
+  div.main article #recentPostsList,
   div.main article .author {
       background: @colorDGrey;
   }
+  div.main article h2,
   div.main article h3,
-  div.main article .author .name, div.main article .author .organization {
+  div.main article .author .name, 
+  div.main article .author .organization {
       color: @colorWhite;
   }
   article.txtNoir h3,
@@ -251,5 +254,31 @@
   /* _pub.sass */
   .xtra {
       display: none;
+  }
+  
+  /* scribblelive.sass */
+  #pinnedFactsList h2 {
+      background: @colorLGrey;
+      border-color: @colorDGrey;
+      color: @colorWhite;
+  }
+ 
+  #recentPostsList,
+  .scribblelive #scribbleComments {
+      background: @colorDGrey;
+  }
+  
+  ul.recentPostsWidget li {
+    background: @colorLGrey;
+  }
+  
+  ul.recentPostsWidget li .Content {
+    color: @colorWhite;
+  }
+  
+  /* _tag.sass */
+  .tag {
+      background-color: @colorDGrey;
+      border: 1px solid @colorRed;
   }
 }
