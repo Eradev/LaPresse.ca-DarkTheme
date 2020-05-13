@@ -2,7 +2,7 @@
 @name        LaPresse.ca Dark theme
 @description Dark theme for LaPresse.ca for those who don't like light
 @namespace   com.github.Eradev
-@version     1.2.2
+@version     1.3.0
 @updateURL   https://raw.githubusercontent.com/Eradev/Lapresse.ca-DarkTheme/master/lapresse-dark.user.css
 @author      Eradev
 @license     MIT
@@ -34,6 +34,7 @@
   }
 
   /* _header.sass */
+  .header,
   .meteo,
   .rightctrl a {
     color: @colorWhite;
@@ -80,6 +81,7 @@
   .footer .footer__block.applications p {
     color: @colorRed;
   }
+  .footer .footer__wrapper,
   .footer a {
     color: @colorWhite;
   }
@@ -106,6 +108,59 @@
   .tag {
     background-color: @colorDGrey;
     border: 1px solid @colorRed;
+  }
+  
+  /* _weatherWidget.sass */
+  .weatherWidget,
+  .weatherWidget a {
+    color: @colorWhite;
+  }
+  
+  /* _subHeader.sass */
+  .subHeader--type-trending,
+  .subHeader--type-video,
+  .subHeader--type-editorsChoice {
+    color: @colorWhite;
+  }
+  .subHeader--type-trending,
+  .subHeader--type-video,
+  .subHeader--type-editorsChoice {
+    border-color: @colorWhite;
+  }
+  
+  /* home-page.sass */
+  hr {
+    background-color: @colorWhite;
+  }
+  .editorsChoiceCard a, 
+  .videosHubCard a, 
+  .homeXtraCard a, 
+  .homeTrendingCard a, 
+  .homeHeadlinesCard a, 
+  .homeSectionHeadlinesCard a, 
+  .homeStrongPressCard a,
+  .editorsChoiceCard__publicationDates,
+  .videosHubCard__publicationDates,
+  .homeXtraCard__publicationDates,
+  .homeTrendingCard__publicationDates,
+  .homeHeadlinesCard__publicationDates,
+  .homeSectionHeadlinesCard__publicationDates,
+  .homeStrongPressCard__publicationDates,
+  .editorsChoiceCard__publicationUpdateDate,
+  .videosHubCard__publicationUpdateDate,
+  .homeXtraCard__publicationUpdateDate,
+  .homeTrendingCard__publicationUpdateDate,
+  .homeHeadlinesCard__publicationUpdateDate,
+  .homeSectionHeadlinesCard__publicationUpdateDate,
+  .homeStrongPressCard__publicationUpdateDate {
+    color: @colorWhite;
+  }
+  .homeContest {
+    display: none;
+  }
+  .editorsChoiceCard__publicationDates,
+  .editorsChoiceCard__suptitle {
+    display:block !important;
   }
 
   /* accueil.sass */
@@ -298,5 +353,12 @@
     border: 0;
     background: transparent;
     padding: 0;
+  }
+  
+  /* Misc */
+  .newsletterRegisterBox,
+  .homeSectionHeadlines--section-XTR,
+  .pageBlock--emplacement-homePageSectionHeadlinesXTRA {
+    display: none;
   }
 }
