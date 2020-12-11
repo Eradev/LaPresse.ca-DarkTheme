@@ -2,7 +2,7 @@
 @name        LaPresse.ca Dark theme
 @description Dark theme for LaPresse.ca for those who don't like light
 @namespace   com.github.Eradev
-@version     1.3.2
+@version     1.4.0
 @updateURL   https://raw.githubusercontent.com/Eradev/Lapresse.ca-DarkTheme/master/lapresse-dark.user.css
 @author      Eradev
 @license     MIT
@@ -383,4 +383,28 @@
   .pageBlock--emplacement-homePageSectionHeadlinesXTRA {
     display: none;
   }
+  
+  /* _tabs.sass */
+  .tabLink {
+    background-color: @colorBlack;
+    border: 1px solid @colorWhite;
+  }
+  .tabLink.tabLink-active {
+    color: @colorRed;
+    border-color: @colorRed;
+    font-weight: 700;
+  }
+}
+
+@-moz-document domain("dwcdn.net") {
+  .chart {
+    color: @colorWhite;
+  }
+  
+  .chart .label span, .chart .label tspan {
+    color: @colorWhite;
+    fill: @colorWhite;
+    text-shadow: none
+  }
+
 }
