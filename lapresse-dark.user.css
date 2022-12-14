@@ -2,7 +2,7 @@
 @name        LaPresse.ca Dark theme
 @description Dark theme for LaPresse.ca for those who don't like light
 @namespace   com.github.Eradev
-@version     1.4.4
+@version     1.4.5
 @updateURL   https://raw.githubusercontent.com/Eradev/Lapresse.ca-DarkTheme/master/lapresse-dark.user.css
 @author      Eradev
 @license     MIT
@@ -34,7 +34,10 @@
   }
 
   /* _header.sass */
-  .header,
+  .header {
+    color: @colorRed;
+  }
+  
   .meteo,
   .rightctrl a {
     color: @colorWhite;
@@ -132,12 +135,7 @@
   .subHeader--type-trending,
   .subHeader--type-video,
   .subHeader--type-editorsChoice {
-    color: @colorWhite;
-  }
-  .subHeader--type-trending,
-  .subHeader--type-video,
-  .subHeader--type-editorsChoice {
-    border-color: @colorWhite;
+    color: @colorRed;
   }
   
   .pageBlock--emplacement-storyNewsletter {
@@ -179,6 +177,10 @@
   .homeHeadlinesCard__details,
   .homeSectionHeadlinesCard__details,
   .homeStrongPressCard__details {
+    color: @colorWhite;
+  }
+  
+  .homeTrending__tab {
     color: @colorWhite;
   }
   
@@ -505,6 +507,12 @@
   .authorHeader__biography,
   .storyCard--mostRecent .storyCard__lead {
     color: @colorWhite;
+  }
+  
+  /* _videoSticker.sass */
+  .subHeader--type-purchasing-power {
+    border-top-color: @colorWhite;
+    color: @colorRed;
   }
 }
 
