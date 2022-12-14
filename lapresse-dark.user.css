@@ -2,7 +2,7 @@
 @name        LaPresse.ca Dark theme
 @description Dark theme for LaPresse.ca for those who don't like light
 @namespace   com.github.Eradev
-@version     1.4.5
+@version     1.4.6
 @updateURL   https://raw.githubusercontent.com/Eradev/Lapresse.ca-DarkTheme/master/lapresse-dark.user.css
 @author      Eradev
 @license     MIT
@@ -197,6 +197,13 @@
   .editorsChoiceCard__publicationDates,
   .editorsChoiceCard__suptitle {
     display:block !important;
+  }
+  
+  .homeTrending__tab {
+    background-color: @colorLGrey;
+  }
+  .homeTrending__tab--active {
+    background: @colorDGrey;
   }
   
   /* homeHeadlinesRow--displayMode-grouped.sass */
@@ -495,6 +502,10 @@
   }
   
   /* storyCard.sass */
+  .storyCard {
+    border-color: @colorDGrey;
+  }
+  
   .storyCard__publicationDates {
     color: @colorWhite;
   }
@@ -510,8 +521,14 @@
   }
   
   /* _videoSticker.sass */
+  .subHeader--type-trending,
+  .subHeader--type-video,
+  .subHeader--type-editorsChoice {
+    border-color: @colorDGrey;
+  }
+  
   .subHeader--type-purchasing-power {
-    border-top-color: @colorWhite;
+    border-top-color: @colorDGrey;
     color: @colorRed;
   }
 }
