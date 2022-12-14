@@ -2,7 +2,7 @@
 @name        LaPresse.ca Dark theme
 @description Dark theme for LaPresse.ca for those who don't like light
 @namespace   com.github.Eradev
-@version     1.4.2
+@version     1.4.3
 @updateURL   https://raw.githubusercontent.com/Eradev/Lapresse.ca-DarkTheme/master/lapresse-dark.user.css
 @author      Eradev
 @license     MIT
@@ -94,6 +94,9 @@
 
   /* _headlines.sass */
   .headlinesBlockTitle,
+  .headlineCard__supTitle {
+    color: @colorRed;
+  }
   .headlineCard__title,
   .headlineCard__lead {
     color: @colorWhite;
@@ -282,12 +285,18 @@
   article.txtNoir p {
     color: @colorBlack !important;
   }
+  div.main .mainStory p.epigraph {
+    color: @colorRed;
+  }
 
   /* _mostRecent.sass */
+  .mostRecent > h2,
+  .mostRecent article.card .subTitle {
+    color: @colorRed;
+  }
   .mostRecent {
     grid-template-columns: auto;
   }
-  .mostRecent > h2,
   .mostRecent article.card .title,
   .mostRecent article.card .articleDetail__lead {
     color: @colorWhite;
@@ -304,14 +313,22 @@
 
   /* _trendingTabs.sass */
   .trendingTabs h2,
+  .trendingTabs .supTitle {
+    color: @colorRed;
+  }
   .trendingTabs .title {
     color: @colorWhite;
   }
 
   /* _videoList.sass */
+  .videosList.pageBlock--emplacement-sectionPageVideos h2,
+  .videosList .supTitle
+  {
+    color: @colorRed;  
+  }
+  
   .videosList h2,
   .videosList p,
-  .videosList.pageBlock--emplacement-sectionPageVideos h2,
   .videosList .title {
     color: @colorWhite;
   }
@@ -400,6 +417,7 @@
   }
   
   /* Misc */
+  .adSpotBlock,
   .newsletterRegisterBox,
   .homeSectionHeadlines--section-XTR,
   .pageBlock--emplacement-homePageSectionHeadlinesXTRA {
@@ -425,6 +443,57 @@
   /* _topNav.scss */
   .topNav {
     display: none;
+  }
+  
+  /* badge.sass */
+  .storyCard__titleLink,
+  .storyCard__titleLink:visited {
+    color: @colorWhite;
+  }
+  
+  /* article.sass */
+  div.main .mainStory p.paragraph,
+  div.main .mainStory .listModule li,
+  div.main .mainStory h1.headlines .title,
+  div.main .mainStory .visual .description,
+  div.main .mainStory .teaser,
+  div.main .mainStory .lead,
+  div.main .mainStory h3 {
+    color: @colorWhite;
+  }
+  
+  div.main .mainStory h1.headlines .suptitle,
+  .relatedStories__headerTitle {
+    color: @colorRed;
+  }
+  
+  div.main .mainStory .authorModule .authorModule__content {
+    background: @colorDGrey;
+  }
+  div.main .mainStory .authorModule--hasAuthorSheet .authorModule__content:hover {
+    background: @colorLGrey;
+  }
+  div.main .mainStory .authorModule .authorModule__content .authorModule__details .authorModule__name,
+  div.main .mainStory .authorModule .authorModule__content .authorModule__details .authorModule__organisation {
+    color: @colorWhite;
+  }
+  div.main .mainStory .authorModule a::after {
+    color: @colorRed;
+  }
+  
+  /* storyCard.sass */
+  .storyCard__publicationDates {
+    color: @colorWhite;
+  }
+  .storyCard__suptitleLink,
+  .storyCard__suptitleLink:visited {
+    color: @colorRed;
+  }
+  
+  /* _fonts.css */
+  .authorHeader__biography,
+  .storyCard--mostRecent .storyCard__lead {
+    color: @colorWhite;
   }
 }
 
