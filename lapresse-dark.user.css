@@ -2,7 +2,7 @@
 @name        LaPresse.ca Dark theme
 @description Dark theme for LaPresse.ca for those who don't like light
 @namespace   com.github.Eradev
-@version     1.4.6
+@version     1.4.7
 @updateURL   https://raw.githubusercontent.com/Eradev/Lapresse.ca-DarkTheme/master/lapresse-dark.user.css
 @author      Eradev
 @license     MIT
@@ -308,6 +308,10 @@
   div.main .mainStory p.epigraph {
     color: @colorRed;
   }
+  div.main .mainStory .capsuleModule.DEB {
+    background: @colorDGrey;
+    color: @colorWhite;
+  }
 
   /* _mostRecent.sass */
   .mostRecent > h2,
@@ -322,7 +326,7 @@
     color: @colorWhite;
   }
   .mostRecentList article.mostRecentCard {
-    border-color: @colorLGrey;
+    border-color: @colorDGrey;
   }
   .mostRecentList .mostRecentList__wrapper {
     max-width: 100%;
@@ -362,9 +366,10 @@
   .trending .title {
     color: @colorWhite;
   }
+
   .trending li.trendingCard,
   .trendingTabs li.trendingCard {
-    border-color: @colorLGrey;
+    border-color: @colorDGrey;
   }
 
   /* _share.sass */
