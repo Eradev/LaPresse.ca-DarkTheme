@@ -2,7 +2,7 @@
 @name        LaPresse.ca Dark theme
 @description Dark theme for LaPresse.ca for those who don't like light
 @namespace   com.github.Eradev
-@version     1.4.7
+@version     1.4.8
 @updateURL   https://raw.githubusercontent.com/Eradev/Lapresse.ca-DarkTheme/master/lapresse-dark.user.css
 @author      Eradev
 @license     MIT
@@ -310,6 +310,9 @@
   }
   div.main .mainStory .capsuleModule.DEB {
     background: @colorDGrey;
+  }
+  div.main .mainStory .capsuleModule .textModule,
+  div.main .mainStory .capsuleModule li {
     color: @colorWhite;
   }
 
