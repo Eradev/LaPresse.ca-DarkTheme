@@ -2,7 +2,7 @@
 @name        LaPresse.ca Dark theme
 @description Dark theme for LaPresse.ca for those who don't like light
 @namespace   com.github.Eradev
-@version     1.4.10
+@version     1.4.11
 @updateURL   https://raw.githubusercontent.com/Eradev/Lapresse.ca-DarkTheme/master/lapresse-dark.user.css
 @author      Eradev
 @license     MIT
@@ -301,7 +301,7 @@
   div.main article h3,
   div.main article .author .name,
   div.main article .author .organization {
-    color: @colorWhite;
+    color: @colorWhite !important;
   }
   article.txtNoir h3,
   article.txtNoir p {
@@ -320,7 +320,8 @@
 
   /* _mostRecent.sass */
   .mostRecent > h2,
-  .mostRecent article.card .subTitle {
+  .mostRecent article.card .subTitle,
+  .mostRecent__title {
     color: @colorRed;
   }
   .mostRecent {
@@ -342,18 +343,21 @@
 
   /* _trendingTabs.sass */
   .trendingTabs h2,
-  .trendingTabs .supTitle {
+  .trendingTabs .supTitle,
+  .trending__title{
     color: @colorRed;
   }
-  .trendingTabs .title {
+  .trendingTabs .title,
+  {
     color: @colorWhite;
   }
 
   /* _videoList.sass */
   .videosList.pageBlock--emplacement-sectionPageVideos h2,
-  .videosList .supTitle
+  .videosList .supTitle,
+  .videosList__title
   {
-    color: @colorRed;  
+    color: @colorRed !important;  
   }
   
   .videosList h2,
@@ -375,6 +379,11 @@
   .trending li.trendingCard,
   .trendingTabs li.trendingCard {
     border-color: @colorDGrey;
+  }
+  
+  /* _trendingTabs.sass */
+  .trendingTabs__title {
+    color: @colorRed;
   }
 
   /* _share.sass */
@@ -476,8 +485,8 @@
   }
   
   /* badge.sass */
-  .storyCard__titleLink,
-  .storyCard__titleLink:visited {
+  a.storyCard__titleLink,
+  a.storyCard__titleLink:visited {
     color: @colorWhite;
   }
   
